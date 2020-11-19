@@ -1,0 +1,35 @@
+{
+  "name": "monorepo-quickstart-es6-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "monorepo example with npm workspaces",
+  "keywords": [
+    "template",
+    "quickstart"
+  ],
+  "homepage": "https://github.com/examples-hub/monorepo-quickstart-es6#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/examples-hub/monorepo-quickstart-es6.git"
+  },
+  "license": "MIT",
+  "author": "jinyaoo",
+  "workspaces": [
+    "packages/*",
+    "package-a"
+  ],
+  "scripts": {
+    "clean": "rimraf \"packages/**/lib\" \"packages/**/*.tsbuildinfo\"",
+    "compile": "tsc -b tsconfig.build.json",
+    "format": "npm run prettier -- --write",
+    "format:check": "npm run prettier -- --check",
+    "lint": "npm run format:check",
+    "prepare": "npm run compile",
+    "prettier": "prettier \"*.{js,json,yml,md}\" \"packages/**/*\"",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2"
+  }
+}
