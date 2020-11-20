@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "monorepo example with npm workspaces",
+  "type": "module",
   "keywords": [
     "template",
     "quickstart"
@@ -19,13 +20,13 @@
     "package-a"
   ],
   "scripts": {
-    "clean": "rimraf \"packages/**/lib\" \"packages/**/*.tsbuildinfo\"",
-    "compile": "tsc -b tsconfig.build.json",
+    "clean": "rimraf \"packages/**/lib\"",
+    "compile": "",
     "format": "npm run prettier -- --write",
     "format:check": "npm run prettier -- --check",
     "lint": "npm run format:check",
-    "prepare": "npm run compile",
-    "prettier": "prettier \"*.{js,json,yml,md}\" \"packages/**/*\"",
+    "prepare": "",
+    "prettier": "prettier \"*.{js,json,yml,md}\"",
     "test": "jest"
   },
   "devDependencies": {

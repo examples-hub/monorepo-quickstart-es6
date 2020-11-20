@@ -1,2 +1,3 @@
-const { log } = require('package-a');
+import log from 'package-a';
+
 log();

@@ -1,3 +1,2 @@
-module.exports = {
-  log: () => console.log(process.argv),
-};
+export const log = () => console.log(process.argv);
+export default log;
