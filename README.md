@@ -1,4 +1,4 @@
-# monorepo-quickstart-es6
+# monorepo-starter-es6
 
 - quickstart example monorepo using npm workspaces
 

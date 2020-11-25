@@ -1,8 +1,8 @@
 {
-  "name": "monorepo-quickstart-es6-example",
+  "name": "monorepo-starter-es6",
   "version": "1.0.0",
   "private": true,
-  "description": "monorepo example with npm workspaces",
+  "description": "monorepo starter with npm workspaces",
   "type": "module",
   "keywords": [
     "template",
